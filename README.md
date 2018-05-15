@@ -2,6 +2,8 @@
 
 This is my finished project after taking the most excellent [React 16 For Everyone](https://www.leveluptutorials.com/tutorials/react-16-for-everyone) course created by Scott Tolinski.
 
+The demo/example can be viewed here: <https://jonathanbell.github.io/lumdb/>
+
 ## Installation
 
 1.  Clone or download this repo.

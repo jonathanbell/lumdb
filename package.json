@@ -2,7 +2,13 @@
   "name": "lumdb",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://jonathanbell.github.io/lumdb",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jonathanbell/lumdb.git"
+  },
   "dependencies": {
+    "gh-pages": "^1.1.0",
     "prop-types": "^15.6.1",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
@@ -15,6 +21,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
