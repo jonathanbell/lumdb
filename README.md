@@ -8,3 +8,5 @@ This is my finished project after taking the most excellent [React 16 For Everyo
 1.  `cd lumdb`
 1.  `npm install`
 1.  `npm run start`
+
+Demo is here: <https://jonathanbell.github.io/lumdb>
