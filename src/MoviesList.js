@@ -31,7 +31,9 @@ class MoviesList extends PureComponent {
   render() {
     return (
       <MovieGrid>
-        {this.state.movies.map(movie => <Movie key={movie.id} movie={movie} />)}
+        {this.state.movies.map(movie => (
+          <Movie key={movie.id} movie={movie} />
+        ))}
       </MovieGrid>
     );
   }

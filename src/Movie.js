@@ -16,7 +16,8 @@ const Movie = ({ movie }) => (
 
 Movie.propTypes = {
   movie: PropTypes.shape({
-    title: PropTypes.string.isRequired, // "validates" that the `title` is a prop type of string and is not NULL
+    // Validates that the `title` is a prop type of string and is not NULL
+    title: PropTypes.string.isRequired,
     overview: PropTypes.string
   }).isRequired
 };

@@ -1,6 +1,6 @@
 # Level Up React Movie Database
 
-This is my finished project after taking the most excellent [React 16 For Everyone](https://www.leveluptutorials.com/tutorials/react-16-for-everyone) course created by Scott Tolinski.
+This is my finished project after taking the most excellent [React 16 For Everyone](https://www.leveluptutorials.com/tutorials/react-16-for-everyone) course created by Scott Tolinski. It looks up current movies and displays them in a slick way.
 
 ## Installation
 
