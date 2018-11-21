@@ -6,7 +6,7 @@
     "type": "git",
     "url": "https://github.com/jonathanbell/lumdb.git"
   },
-  "homepage": "http://jonathanbell.github.io/lumdb",
+  "homepage": "https://jonathanbell.github.io/lumdb",
   "dependencies": {
     "ajv": "^6.5.4",
     "prop-types": "^15.6.1",
@@ -32,6 +32,8 @@
     "eslint-plugin-import": "^2.11.0",
     "eslint-plugin-jsx-a11y": "^6.1.2",
     "eslint-plugin-react": "^7.7.0",
-    "gh-pages": "^2.0.1"
+    "gh-pages": "^2.0.1",
+    "jest-fetch-mock": "^1.7.5",
+    "react-testing-library": "^5.2.3"
   }
 }

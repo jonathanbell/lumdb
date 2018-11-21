@@ -4,20 +4,30 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Overdrive from 'react-overdrive';
 
-const POSTER_PATH = 'http://image.tmdb.org/t/p/w154';
+export const POSTER_PATH = 'http://image.tmdb.org/t/p/w154';
 
-const Movie = ({ movie }) => (
-  <Link to={`/${movie.id}`}>
-    <Overdrive id={String(movie.id)}>
-      <Poster src={`${POSTER_PATH}${movie.poster_path}`} alt={movie.title} />
-    </Overdrive>
-  </Link>
-);
+const Movie = ({ movie }) => {
+  if (!movie) return null;
+
+  return (
+    <Link to={`/${movie.id}`} data-testid="movie-link">
+      <Overdrive id={String(movie.id)}>
+        <Poster
+          data-testid="movie-image"
+          src={`${POSTER_PATH}${movie.poster_path}`}
+          alt={movie.title}
+        />
+      </Overdrive>
+    </Link>
+  );
+};
 
 Movie.propTypes = {
   movie: PropTypes.shape({
     // Validates that the `title` is a prop type of string and is not NULL
     title: PropTypes.string.isRequired,
+    poster_path: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired,
     overview: PropTypes.string
   }).isRequired
 };

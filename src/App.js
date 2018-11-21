@@ -1,5 +1,5 @@
 /* eslint react/no-did-mount-set-state: 0 */
-import React, { Component } from 'react';
+import React from 'react';
 import { HashRouter as Router, Route, Switch, Link } from 'react-router-dom';
 
 import MoviesList from './MoviesList';

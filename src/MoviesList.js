@@ -29,6 +29,10 @@ class MoviesList extends PureComponent {
   }
 
   render() {
+    if (this.state.movies.length < 1) {
+      return <h1 data-testid="loading">Loading Movies..</h1>;
+    }
+
     return (
       <MovieGrid>
         {this.state.movies.map(movie => (
