@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, cleanup, fireEvent, getByText } from 'react-testing-library';
-import NewMovie from './NewMovie';
+import NewMovie from '../NewMovie';
 
 afterEach(cleanup);
 

@@ -2,8 +2,8 @@
 import React from 'react';
 import { HashRouter as Router, Route, Switch, Link } from 'react-router-dom';
 
-import MoviesList from './MoviesList';
-import MovieDetail from './MovieDetail';
+import MoviesList from './movies/MoviesList';
+import MovieDetail from './movies/MovieDetail';
 
 import logo from './logo.svg';
 import './App.css';

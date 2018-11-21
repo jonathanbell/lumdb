@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, cleanup, waitForElement } from 'react-testing-library';
-import MovieDetail, { POSTER_PATH, BACKDROP_PATH } from './MovieDetail';
+import MovieDetail, { POSTER_PATH, BACKDROP_PATH } from '../MovieDetail';
 
 // Freakiness!
 // We can overwrite `fetch()` here and use our own (mocked) version of `fetch()`

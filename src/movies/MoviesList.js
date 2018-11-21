@@ -19,10 +19,13 @@ class MoviesList extends PureComponent {
       );
       const movies = await result.json();
 
-      // Our API call has returned! :)
-      this.setState({
-        movies: movies.results
-      });
+      if (typeof movies.results !== 'undefined' && movies.results.length) {
+        // Our API call has returned! :)
+        movies.success = true;
+        this.setState({
+          movies: movies.results
+        });
+      }
     } catch (e) {
       console.error(e);
     }
@@ -30,7 +33,11 @@ class MoviesList extends PureComponent {
 
   render() {
     if (this.state.movies.length < 1) {
-      return <h1 data-testid="loading">Loading Movies..</h1>;
+      return (
+        <h1 style={{ color: '#fff' }} data-testid="loading">
+          Loading Movies...
+        </h1>
+      );
     }
 
     return (
